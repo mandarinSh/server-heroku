@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "engines": {
-    "node": "12.18.4"
+    "node": "12.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -22,5 +22,10 @@
   "homepage": "https://github.com/mandarinSh/server-heroku#readme",
   "dependencies": {
     "express": "4.17.1"
-  }
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ]
 }
