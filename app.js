@@ -7,11 +7,27 @@ app.get('/', (req, res) => {
 })
 
 app.get('/getDogs', (request, response) => {
-  let dogs = {
-    dogNames: ['Zeus', 'Kolt', 'Kiara']
-  };
+  let dogs = [
+    {
+      id: 1,
+      name: "Zeus"
+    },
+    {
+      id: 2,
+      name: "Kiara"
+    }
+  ];
   response.send(dogs);
 });
+
+app.get('/getCats', (request, response) => {
+  let cats = {
+    catNames: ['Snow', 'Barsik', 'Juice']
+  };
+  response.send(cats);
+});
+
+
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
